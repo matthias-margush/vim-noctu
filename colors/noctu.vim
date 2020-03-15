@@ -33,8 +33,8 @@ hi NonText             ctermfg=8
 hi LineNr              ctermfg=8     ctermbg=NONE
 hi CursorLineNr        ctermfg=11    ctermbg=0
 hi Visual              ctermfg=0     ctermbg=12
-hi IncSearch           ctermfg=0     ctermbg=13    cterm=NONE
-hi Search              ctermfg=0     ctermbg=10
+hi IncSearch           ctermfg=0     ctermbg=1     cterm=NONE
+hi Search              ctermfg=1     ctermbg=0
 hi StatusLine          ctermfg=7     ctermbg=0     cterm=bold
 hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=bold
 hi VertSplit           ctermfg=8     ctermbg=0     cterm=NONE
