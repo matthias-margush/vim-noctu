@@ -5,7 +5,7 @@
 " --------------------------------------------------------------
 
 " Scheme setup {{{
-set background=dark
+set background=light
 hi! clear
 
 if exists("syntax_on")
@@ -44,7 +44,7 @@ hi Folded              ctermfg=6     ctermbg=0     cterm=bold
 hi Conceal             ctermfg=6     ctermbg=NONE
 hi Directory           ctermfg=12
 hi Title               ctermfg=3     cterm=bold
-hi ErrorMsg            ctermfg=15    ctermbg=8
+hi ErrorMsg            ctermfg=1     ctermbg=0
 hi DiffAdd             ctermfg=0     ctermbg=2
 hi DiffChange          ctermfg=0     ctermbg=3
 hi DiffDelete          ctermfg=0     ctermbg=1
