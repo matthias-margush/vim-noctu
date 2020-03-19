@@ -20,7 +20,7 @@ hi Normal              ctermfg=7
 hi Cursor              ctermfg=7     ctermbg=1
 hi CursorLine          ctermbg=0     cterm=NONE
 hi MatchParen          ctermfg=7     ctermbg=NONE  cterm=underline
-hi Pmenu               ctermfg=2     ctermbg=0
+hi Pmenu               ctermfg=0     ctermbg=7
 hi PmenuThumb          ctermbg=7
 hi PmenuSBar           ctermbg=8
 hi PmenuSel            ctermfg=7     ctermbg=0
