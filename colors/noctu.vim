@@ -250,5 +250,12 @@ hi! link bladeParen      phpParent
 hi! link bladeEchoDelim  PreProc
 
 "}}}
+"
+" Coc {{{
+hi! CocErrorFloat ctermfg=0
+hi! CocWarningFloat ctermfg=0
+hi! CocInfoFloat ctermfg=0
+
+"}}}
 
 " vim: fdm=marker:sw=2:sts=2:et
