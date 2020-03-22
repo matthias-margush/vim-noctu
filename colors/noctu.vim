@@ -38,8 +38,8 @@ hi Search              ctermfg=1     ctermbg=0
 hi StatusLine          ctermfg=7     ctermbg=0     cterm=bold
 hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=bold
 hi VertSplit           ctermfg=8     ctermbg=0     cterm=NONE
-hi TabLine             ctermfg=8     ctermbg=0     cterm=NONE
-hi TabLineSel          ctermfg=7     ctermbg=0
+hi TabLine             ctermfg=8     ctermbg=0     cterm=underline
+hi TabLineSel          ctermfg=7     ctermbg=0     cterm=underline
 hi Folded              ctermfg=6     ctermbg=0     cterm=bold
 hi Conceal             ctermfg=6     ctermbg=NONE
 hi Directory           ctermfg=12
