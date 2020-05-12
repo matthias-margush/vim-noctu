@@ -33,11 +33,11 @@ hi NonText             ctermfg=5
 hi LineNr              ctermfg=5     ctermbg=NONE
 hi CursorLineNr        ctermfg=3     ctermbg=0
 hi Visual                            ctermbg=11
-hi IncSearch           ctermfg=3     ctermbg=0     cterm=bold,italic,underline
-hi Search              ctermfg=3     ctermbg=0     cterm=bold,underline,italic
-hi StatusLine          ctermfg=7     ctermbg=0     cterm=bold
-hi StatusLineNC        ctermfg=5     ctermbg=0     cterm=bold
-hi VertSplit           ctermfg=5     ctermbg=0     cterm=NONE
+hi IncSearch           ctermfg=0     ctermbg=5     cterm=bold
+hi Search              ctermfg=0     ctermbg=5     cterm=italic
+hi StatusLine          ctermfg=15    ctermbg=0    cterm=bold
+hi StatusLineNC        ctermfg=15    ctermbg=0     cterm=bold
+hi VertSplit           ctermfg=15    ctermbg=0     cterm=NONE
 
 hi TabLine             ctermfg=0     ctermbg=7    cterm=none
 hi TabLineSel          ctermfg=0     ctermbg=7    cterm=bold
@@ -46,7 +46,7 @@ hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse
 
 hi Folded              ctermfg=8     ctermbg=0     cterm=none
 hi Conceal             ctermfg=6     ctermbg=NONE
-hi Directory           ctermfg=4
+hi Directory           ctermfg=7
 hi Title               ctermfg=3     cterm=bold
 hi ErrorMsg            ctermfg=1     ctermbg=0
 hi DiffAdd             ctermfg=2     ctermbg=0
@@ -77,17 +77,17 @@ hi! link SpecialKey    NonText
 hi Delimiter       ctermfg=7
 hi Comment         ctermfg=15
 hi Underlined      ctermfg=4   cterm=underline
-hi Type            ctermfg=4
-hi String          ctermfg=3
-hi Keyword         ctermfg=2   cterm=italic
+hi Type            ctermfg=5   cterm=bold
+hi String          ctermfg=5
+hi Keyword         ctermfg=7   cterm=bold
 hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
-hi Function        ctermfg=4
+hi link Function   keyword
 hi Identifier      ctermfg=7   cterm=NONE
 hi Statement       ctermfg=7   cterm=bold
-hi Constant        ctermfg=13
+hi Constant        ctermfg=7
 hi Number          ctermfg=4
 hi Boolean         ctermfg=4
-hi Special         ctermfg=13
+hi Special         ctermfg=7
 hi Ignore          ctermfg=0
 hi PreProc         ctermfg=5   cterm=bold
 hi! link Operator  Delimiter
@@ -292,9 +292,9 @@ hi! link ClapProviderId ClapDisplay
 " ClapDisplayInvisibleEndOfBuffer
 
 " header
-hi! ClapSearchText ctermfg=3 ctermbg=8
-hi! ClapInput ctermfg=1 ctermbg=8
-hi! ClapSpinner ctermfg=1 ctermbg=8
+hi! ClapSearchText ctermfg=7 ctermbg=8
+hi! ClapInput      ctermfg=7 ctermbg=8
+hi! ClapSpinner    ctermfg=7 ctermbg=8
 
 
 hi! ClapMatches cterm=bold
@@ -308,8 +308,6 @@ hi! ClapMatches5 ctermfg=0 ctermbg=1
 hi! ClapMatches6 ctermfg=0 ctermbg=1
 hi! ClapMatches7 ctermfg=0 ctermbg=1
 hi! ClapMatches8 ctermfg=0 ctermbg=1
-
-  " `ClapMatches[1-8]` will be used for the matched substrings in the substring mode.
 "}}}
 
 " vim: fdm=marker:sw=2:sts=2:et
