@@ -46,7 +46,7 @@ hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse
 
 hi Folded              ctermfg=8     ctermbg=0     cterm=none
 hi Conceal             ctermfg=6     ctermbg=NONE
-hi Directory           ctermfg=12
+hi Directory           ctermfg=4
 hi Title               ctermfg=3     cterm=bold
 hi ErrorMsg            ctermfg=1     ctermbg=0
 hi DiffAdd             ctermfg=2     ctermbg=0
@@ -64,7 +64,7 @@ hi User8               ctermfg=5     ctermbg=0
 hi User9               ctermfg=15    ctermbg=5
 hi! link CursorColumn  CursorLine
 hi! link SignColumn    LineNr
-hi! link WildMenu      Visual
+hi! WildMenu           ctermfg=0 ctermbg=7
 hi! FoldColumn         ctermbg=0 ctermfg=15
 hi! link WarningMsg    ErrorMsg
 hi! link MoreMsg       Title
@@ -85,7 +85,7 @@ hi Function        ctermfg=4
 hi Identifier      ctermfg=7   cterm=NONE
 hi Statement       ctermfg=7   cterm=bold
 hi Constant        ctermfg=13
-hi Number          ctermfg=12
+hi Number          ctermfg=4
 hi Boolean         ctermfg=4
 hi Special         ctermfg=13
 hi Ignore          ctermfg=0
@@ -112,7 +112,7 @@ hi! link htmlEndTag         htmlTag
 "}}}
 " XML {{{
 hi xmlTagName       ctermfg=4
-hi xmlTag           ctermfg=12
+hi xmlTag           ctermfg=4
 hi! link xmlString  xmlTagName
 hi! link xmlAttrib  xmlTag
 hi! link xmlEndTag  xmlTag
