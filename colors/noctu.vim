@@ -13,8 +13,8 @@ if exists("syntax_on")
 endif
 
 let g:colors_name = "noctu"
-
 "}}}
+
 " Vim UI {{{
 hi Normal              ctermfg=7
 hi Cursor              ctermfg=7     ctermbg=1
@@ -32,19 +32,19 @@ hi SpellLocal          ctermfg=13    ctermbg=NONE  cterm=underline
 hi NonText             ctermfg=5
 hi LineNr              ctermfg=5     ctermbg=NONE
 hi CursorLineNr        ctermfg=3     ctermbg=0
-hi Visual                            ctermbg=11
-hi IncSearch           ctermfg=0     ctermbg=5     cterm=bold
-hi Search              ctermfg=0     ctermbg=5     cterm=italic
-hi StatusLine          ctermfg=15    ctermbg=0    cterm=bold
+hi Visual                            ctermbg=12
+hi IncSearch                         ctermbg=11    cterm=bold
+hi Search                            ctermbg=11    cterm=none
+hi StatusLine          ctermfg=15    ctermbg=0     cterm=bold
 hi StatusLineNC        ctermfg=15    ctermbg=0     cterm=bold
 hi VertSplit           ctermfg=15    ctermbg=0     cterm=NONE
 
-hi TabLine             ctermfg=0     ctermbg=7    cterm=none
-hi TabLineSel          ctermfg=0     ctermbg=7    cterm=bold
-hi TabLineBetween      ctermfg=0     ctermbg=7    cterm=none
+hi TabLine             ctermfg=0     ctermbg=7    cterm=italic
+hi TabLineSel          ctermfg=0     ctermbg=7    cterm=italic
+hi TabLineBetween      ctermfg=0     ctermbg=7    cterm=italic
 hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse
 
-hi Folded              ctermfg=8     ctermbg=0     cterm=none
+hi Folded              ctermfg=7     ctermbg=0     cterm=italic
 hi Conceal             ctermfg=6     ctermbg=NONE
 hi Directory           ctermfg=7
 hi Title               ctermfg=3     cterm=bold
@@ -292,9 +292,9 @@ hi! link ClapProviderId ClapDisplay
 " ClapDisplayInvisibleEndOfBuffer
 
 " header
-hi! ClapSearchText ctermfg=7 ctermbg=8
-hi! ClapInput      ctermfg=7 ctermbg=8
-hi! ClapSpinner    ctermfg=7 ctermbg=8
+hi! ClapSearchText ctermfg=7 ctermbg=0
+hi! ClapInput      ctermfg=7 ctermbg=0
+hi! ClapSpinner    ctermfg=7 ctermbg=0
 
 
 hi! ClapMatches cterm=bold
