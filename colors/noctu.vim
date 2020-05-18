@@ -24,7 +24,7 @@ hi Pmenu               ctermfg=0     ctermbg=7
 hi PmenuThumb          ctermbg=7
 hi PmenuSBar           ctermbg=5
 hi PmenuSel            ctermfg=0     ctermbg=5
-hi ColorColumn         ctermbg=0
+hi ColorColumn         ctermbg=11
 hi SpellBad            ctermfg=1     ctermbg=NONE  cterm=underline
 hi SpellCap            ctermfg=10    ctermbg=NONE  cterm=underline
 hi SpellRare           ctermfg=3     ctermbg=NONE  cterm=underline
@@ -47,7 +47,7 @@ hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse
 hi Folded              ctermfg=7     ctermbg=0     cterm=none
 hi Conceal             ctermfg=6     ctermbg=NONE
 hi Directory           ctermfg=7
-hi Title               ctermfg=3     cterm=bold
+hi Title               ctermfg=7     cterm=bold,italic
 hi ErrorMsg            ctermfg=1     ctermbg=0
 hi DiffAdd             ctermfg=2     ctermbg=0
 hi DiffChange          ctermfg=3     ctermbg=0
@@ -217,6 +217,11 @@ hi mustachePartial           ctermfg=13
 hi shDerefSimple     ctermfg=3
 hi! link shDerefVar  shDerefSimple
 
+hi! LspDiagnosticsError       ctermfg=Red cterm=bold
+hi! LspDiagnosticsWarning     ctermfg=Red cterm=bold
+hi! LspDiagnosticsInformation ctermfg=Red cterm=bold
+hi! LspDiagnosticsHint        ctermfg=Red cterm=bold
+
 "}}}
 " Syntastic {{{
 hi SyntasticWarningSign       ctermfg=3  ctermbg=NONE
@@ -267,6 +272,8 @@ hi! CocWarningSign  ctermfg=Brown cterm=bold
 hi! CocInfoSign  ctermfg=Yellow cterm=bold
 hi! CocHintSign  ctermfg=Blue cterm=bold
 "}}}
+
+hi! link SearchLight IncSearch
 
 " Clap {{{
 hi! ClapCurrentSelection ctermfg=0 ctermbg=7
