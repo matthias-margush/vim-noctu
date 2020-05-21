@@ -32,7 +32,7 @@ hi SpellLocal          ctermfg=13    ctermbg=NONE  cterm=underline
 hi NonText             ctermfg=5
 hi LineNr              ctermfg=5     ctermbg=NONE
 hi CursorLineNr        ctermfg=3     ctermbg=0
-hi Visual                            ctermbg=12
+hi Visual                            ctermbg=11
 hi IncSearch                         ctermbg=11    cterm=bold
 hi Search                            ctermbg=11    cterm=none
 hi StatusLine          ctermfg=15    ctermbg=0     cterm=bold
@@ -40,11 +40,11 @@ hi StatusLineNC        ctermfg=15    ctermbg=0     cterm=bold
 hi VertSplit           ctermfg=15    ctermbg=0     cterm=NONE
 
 hi TabLine             ctermfg=0     ctermbg=7    cterm=italic
-hi TabLineSel          ctermfg=0     ctermbg=7    cterm=italic
+hi TabLineSel          ctermfg=0     ctermbg=7    cterm=bold,italic
 hi TabLineBetween      ctermfg=0     ctermbg=7    cterm=italic
 hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse
 
-hi Folded              ctermfg=7     ctermbg=0     cterm=italic
+hi Folded              ctermfg=7     ctermbg=0     cterm=none
 hi Conceal             ctermfg=6     ctermbg=NONE
 hi Directory           ctermfg=7
 hi Title               ctermfg=3     cterm=bold
@@ -223,6 +223,10 @@ hi SyntasticWarningSign       ctermfg=3  ctermbg=NONE
 hi SyntasticErrorSign         ctermfg=1  ctermbg=NONE
 hi SyntasticStyleWarningSign  ctermfg=2  ctermbg=NONE
 hi SyntasticStyleErrorSign    ctermfg=4  ctermbg=NONE
+hi NeomakeErrorSign ctermfg=1
+hi NeomakeWarningSign ctermfg=1
+hi NeomakeMessageSign ctermfg=1
+hi NeomakeInfoSig ctermfg=1
 
 "}}}
 " Netrw {{{
