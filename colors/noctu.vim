@@ -320,5 +320,11 @@ hi! ClapMatches6 ctermfg=0 ctermbg=1
 hi! ClapMatches7 ctermfg=0 ctermbg=1
 hi! ClapMatches8 ctermfg=0 ctermbg=1
 "}}}
+"
+highlight WhichKey          ctermbg=7 ctermfg=0
+highlight WhichKeySeperator ctermbg=7 ctermfg=0
+highlight WhichKeyGroup     ctermbg=7 ctermfg=0
+highlight WhichKeyDesc      ctermbg=7 ctermfg=0
+highlight WhichKeyFloating  ctermbg=7 ctermfg=0
 
 " vim: fdm=marker:sw=2:sts=2:et
