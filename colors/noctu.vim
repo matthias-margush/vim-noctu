@@ -37,6 +37,9 @@ hi IncSearch           ctermfg=7     ctermbg=11    cterm=bold
 hi Search              ctermfg=7     ctermbg=11    cterm=none
 hi StatusLine          ctermfg=15    ctermbg=0     cterm=bold
 hi StatusLineNC        ctermfg=15    ctermbg=0     cterm=bold
+hi StatusLineTerm      ctermfg=15    ctermbg=0     cterm=bold
+hi StatusLineTermNC    ctermfg=15    ctermbg=0     cterm=bold
+
 hi VertSplit           ctermfg=15    ctermbg=0     cterm=NONE
 
 hi TabLine             ctermfg=0     ctermbg=7    cterm=italic
@@ -102,10 +105,10 @@ hi htmlH1                   cterm=bold
 hi htmlBold                 cterm=bold
 hi htmlItalic               cterm=underline
 hi htmlUnderline            cterm=underline
-hi htmlBoldItalic           cterm=bold,underline
+hi htmlBoldItalic           cterm=bold,italic
 hi htmlBoldUnderline        cterm=bold,underline
-hi htmlUnderlineItalic      cterm=underline
-hi htmlBoldUnderlineItalic  cterm=bold,underline
+hi htmlUnderlineItalic      cterm=underline,italic
+hi htmlBoldUnderlineItalic  cterm=bold,underline,italic
 hi! link htmlLink           Underlined
 hi! link htmlEndTag         htmlTag
 
@@ -326,5 +329,11 @@ highlight WhichKeySeperator ctermbg=7 ctermfg=0
 highlight WhichKeyGroup     ctermbg=7 ctermfg=0
 highlight WhichKeyDesc      ctermbg=7 ctermfg=0
 highlight WhichKeyFloating  ctermbg=7 ctermfg=0
+
+hi! mkdHeading cterm=bold
+hi! mkdBlockQuote ctermfg=2
+hi! htmlItalic cterm=italic
+
+highlight! EndOfBuffer ctermbg=0 ctermfg=0
 
 " vim: fdm=marker:sw=2:sts=2:et
