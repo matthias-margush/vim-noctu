@@ -42,10 +42,10 @@ hi StatusLineTermNC    ctermfg=15    ctermbg=0     cterm=bold
 
 hi VertSplit           ctermfg=15    ctermbg=0     cterm=NONE
 
-hi TabLine             ctermfg=0     ctermbg=7    cterm=italic
-hi TabLineSel          ctermfg=0     ctermbg=7    cterm=bold,italic
-hi TabLineBetween      ctermfg=0     ctermbg=7    cterm=italic
-hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse
+hi TabLine             ctermfg=0     ctermbg=7    cterm=inverse,italic
+hi TabLineSel          ctermfg=0     ctermbg=7    cterm=inverse,bold,italic
+hi TabLineBetween      ctermfg=0     ctermbg=7    cterm=inverse,italic
+hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse,underline
 
 hi Folded              ctermfg=7     ctermbg=0     cterm=none
 hi Conceal             ctermfg=6     ctermbg=NONE
