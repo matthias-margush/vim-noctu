@@ -53,9 +53,9 @@ hi Directory           ctermfg=7
 hi Title               ctermfg=7     cterm=bold,italic
 hi ErrorMsg            ctermfg=1     ctermbg=0
 hi DiffAdd             ctermfg=2     ctermbg=0
-hi DiffChange          ctermfg=3     ctermbg=0
+hi DiffChange          ctermfg=4     ctermbg=0
 hi DiffDelete          ctermfg=1     ctermbg=0
-hi DiffText            ctermfg=0     ctermbg=3     cterm=bold
+hi DiffText            ctermfg=0     ctermbg=4     cterm=bold
 hi User1               ctermfg=1     ctermbg=0
 hi User2               ctermfg=4     ctermbg=0
 hi User3               ctermfg=2     ctermbg=0
