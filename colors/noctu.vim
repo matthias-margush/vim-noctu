@@ -42,10 +42,10 @@ hi StatusLineTermNC    ctermfg=15    ctermbg=0     cterm=bold
 
 hi VertSplit           ctermfg=15    ctermbg=0     cterm=NONE
 
-hi TabLine             ctermfg=0     ctermbg=7    cterm=inverse,italic
-hi TabLineSel          ctermfg=0     ctermbg=7    cterm=inverse,bold,italic
-hi TabLineBetween      ctermfg=0     ctermbg=7    cterm=inverse,italic
-hi TabLineFill         ctermfg=0     ctermbg=7    cterm=inverse,underline
+hi TabLine             ctermbg=12    ctermfg=5    cterm=inverse
+hi TabLineSel          ctermbg=0     ctermfg=5    cterm=inverse,bold
+hi TabLineBetween      ctermbg=0     ctermfg=5    cterm=inverse
+hi TabLineFill         ctermfg=0     ctermbg=5    cterm=inverse,underline
 
 hi Folded              ctermfg=7     ctermbg=0     cterm=none
 hi Conceal             ctermfg=6     ctermbg=NONE
@@ -74,6 +74,7 @@ hi! link MoreMsg       Title
 hi! link Question      MoreMsg
 hi! link ModeMsg       MoreMsg
 hi! link SpecialKey    NonText
+hi! Beacon             ctermfg=7     ctermbg=11
 
 "}}}
 " Generic syntax {{{
