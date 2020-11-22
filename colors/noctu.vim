@@ -33,8 +33,9 @@ hi NonText             ctermfg=5
 hi LineNr              ctermfg=5     ctermbg=NONE
 hi CursorLineNr        ctermfg=3     ctermbg=0
 hi Visual              ctermfg=7     ctermbg=11
-hi IncSearch           ctermfg=7     ctermbg=11    cterm=bold
-hi Search              ctermfg=7     ctermbg=11    cterm=none
+hi IncSearch           ctermfg=7     ctermbg=11    cterm=bold,italic
+hi Search              ctermfg=5     ctermbg=0     cterm=italic
+hi! link SearchLight IncSearch
 hi StatusLine          ctermfg=15    ctermbg=0     cterm=bold
 hi StatusLineNC        ctermfg=15    ctermbg=0     cterm=bold
 hi StatusLineTerm      ctermfg=15    ctermbg=0     cterm=bold
@@ -82,18 +83,21 @@ hi Delimiter       ctermfg=7
 hi Comment         ctermfg=15
 hi Underlined      ctermfg=4   cterm=underline
 hi Type            ctermfg=7   cterm=bold
-hi String          ctermfg=13
+hi String          ctermfg=15
 hi Keyword         ctermfg=7   cterm=bold
+" hi Keyword         ctermfg=9   cterm=bold
 hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
 hi link Function   keyword
-hi Identifier      ctermfg=7   cterm=NONE
-hi Statement       ctermfg=9   cterm=bold
+hi Identifier      ctermfg=7   cterm=bold
+hi Statement       ctermfg=7   cterm=bold
 hi Constant        ctermfg=7
 hi Number          ctermfg=4
 hi Boolean         ctermfg=4
 hi Special         ctermfg=7
+" hi Special         ctermfg=9
 hi Ignore          ctermfg=0
-hi PreProc         ctermfg=5   cterm=bold
+" hi PreProc         ctermfg=5   cterm=bold
+hi PreProc         ctermfg=7   cterm=bold
 hi! link Operator  Delimiter
 hi! link Error     ErrorMsg
 
@@ -268,6 +272,7 @@ hi! link bladeEchoDelim  PreProc
 "}}}
 
 " Coc {{{
+hi! CocHighlightText cterm=underline
 hi! CocErrorFloat ctermfg=0
 hi! CocWarningFloat ctermfg=0
 hi! CocInfoFloat ctermfg=0
@@ -387,7 +392,6 @@ hi CocListBgRed          ctermbg=Red
 
 "}}}
 
-hi! link SearchLight IncSearch
 
 " Clap {{{
 hi ClapCurrentSelection ctermfg=0 ctermbg=7
@@ -446,5 +450,57 @@ hi mkdBlockQuote ctermfg=2
 hi htmlItalic cterm=italic
 
 highlight EndOfBuffer ctermbg=0 ctermfg=0
+
+" TSNone         xxx ctermfg=7
+" TSPunctDelimiter xxx links to Delimiter
+" TSPunctBracket xxx links to Delimiter
+" TSPunctSpecial xxx links to Delimiter
+" TSConstant     xxx links to Constant
+" TSConstBuiltin xxx links to Special
+" TSConstMacro   xxx links to Define
+" TSString       xxx links to String
+" TSStringRegex  xxx links to String
+" TSStringEscape xxx links to SpecialChar
+" TSCharacter    xxx links to Character
+" TSNumber       xxx links to Number
+" TSBoolean      xxx links to Boolean
+" TSFloat        xxx links to Float
+" TSFunction     xxx links to Function
+" TSFuncBuiltin  xxx links to Special
+" TSFuncMacro    xxx links to Macro
+" TSParameter    xxx links to Identifier
+" TSParameterReference xxx links to TSParameter
+" TSMethod       xxx links to Function
+" TSField        xxx links to Identifier
+" TSProperty     xxx links to Identifier
+" TSConstructor  xxx links to Special
+" TSAnnotation   xxx links to PreProc
+" TSAttribute    xxx links to PreProc
+" TSNamespace    xxx links to Include
+" TSConditional  xxx links to Conditional
+" TSRepeat       xxx links to Repeat
+" TSLabel        xxx links to Label
+" TSOperator     xxx links to Operator
+" TSKeyword      xxx links to Keyword
+" TSKeywordFunction xxx links to Keyword
+" TSKeywordOperator xxx links to TSOperator
+" TSException    xxx links to Exception
+" TSType         xxx links to Type
+" TSTypeBuiltin  xxx links to Type
+" TSInclude      xxx links to Include
+" TSVariableBuiltin xxx links to Special
+" TSText         xxx links to TSNone
+" TSStrong       xxx cterm=bold gui=bold
+" TSEmphasis     xxx cterm=italic gui=italic
+" TSUnderline    xxx cterm=underline gui=underline
+" TSTitle        xxx links to Title
+" TSLiteral      xxx links to String
+" TSURI          xxx links to Underlined
+" TSTag          xxx links to Label
+" TSTagDelimiter xxx links to Delimiter
+" TSDefinitionUsage xxx links to Visual
+" TSDefinition   xxx links to Search
+" TSCurrentScope xxx links to CursorLine
+
 
 " vim: fdm=marker:sw=2:sts=2:et
