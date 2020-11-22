@@ -18,7 +18,7 @@ let g:colors_name = "noctu"
 " Vim UI {{{
 hi Normal              ctermfg=7
 hi Cursor              ctermfg=7     ctermbg=1
-hi CursorLine          ctermfg=0     ctermbg=5     cterm=NONE
+hi CursorLine          ctermfg=7     ctermbg=11    cterm=NONE
 hi MatchParen          ctermfg=7     ctermbg=NONE  cterm=underline
 hi Pmenu               ctermfg=0     ctermbg=7
 hi PmenuThumb          ctermbg=7
@@ -87,7 +87,7 @@ hi Keyword         ctermfg=7   cterm=bold
 hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
 hi link Function   keyword
 hi Identifier      ctermfg=7   cterm=NONE
-hi Statement       ctermfg=7   cterm=bold
+hi Statement       ctermfg=9   cterm=bold
 hi Constant        ctermfg=7
 hi Number          ctermfg=4
 hi Boolean         ctermfg=4
@@ -275,30 +275,140 @@ hi! CocErrorSign  ctermfg=Red cterm=bold
 hi! CocWarningSign  ctermfg=Brown cterm=bold
 hi! CocInfoSign  ctermfg=Yellow cterm=bold
 hi! CocHintSign  ctermfg=Blue cterm=bold
+" hi! CocSelectedLine ctermbg=Blue
+
+hi CocListBlackBlack     ctermfg=White   ctermbg=White
+hi CocListBlackBlue      ctermfg=White   ctermbg=Blue
+hi CocListBlackGreen     ctermfg=White   ctermbg=Green
+hi CocListBlackGrey      ctermfg=White   ctermbg=Grey
+hi CocListBlackWhite     ctermfg=White   ctermbg=White
+hi CocListBlackCyan      ctermfg=White   ctermbg=Cyan
+hi CocListBlackYellow    ctermfg=White   ctermbg=Yellow
+hi CocListBlackMagenta   ctermfg=White   ctermbg=Magenta
+hi CocListBlackRed       ctermfg=White   ctermbg=Red
+hi CocListFgBlack        ctermfg=White
+hi CocListBgBlack        ctermfg=White
+
+hi CocListBlueBlack      ctermfg=Blue    ctermbg=Black
+hi CocListBlueBlue       ctermfg=Blue    ctermbg=Blue
+hi CocListBlueGreen      ctermfg=Blue    ctermbg=Green
+hi CocListBlueGrey       ctermfg=Blue    ctermbg=Grey
+hi CocListBlueWhite      ctermfg=Blue    ctermbg=White
+hi CocListBlueCyan       ctermfg=Blue    ctermbg=Cyan
+hi CocListBlueYellow     ctermfg=Blue    ctermbg=Yellow
+hi CocListBlueMagenta    ctermfg=Blue    ctermbg=Magenta
+hi CocListBlueRed        ctermfg=Blue    ctermbg=Red
+hi CocListFgBlue         ctermfg=Blue
+hi CocListBgBlue         ctermfg=Blue
+
+hi CocListGreenBlack     ctermfg=Green   ctermbg=Black
+hi CocListGreenBlue      ctermfg=Green   ctermbg=Blue
+hi CocListGreenGreen     ctermfg=Green   ctermbg=Green
+hi CocListGreenGrey      ctermfg=Green   ctermbg=Grey
+hi CocListGreenWhite     ctermfg=Green   ctermbg=White
+hi CocListGreenCyan      ctermfg=Green   ctermbg=Cyan
+hi CocListGreenYellow    ctermfg=Green   ctermbg=Yellow
+hi CocListGreenMagenta   ctermfg=Green   ctermbg=Magenta
+hi CocListGreenRed       ctermfg=Green   ctermbg=Red
+hi CocListFgGreen        ctermfg=Green
+hi CocListBgGreen        ctermbg=Green
+
+hi CocListGreyBlack      ctermfg=Grey    ctermbg=Black
+hi CocListGreyBlue       ctermfg=Grey    ctermbg=Blue
+hi CocListGreyGreen      ctermfg=Grey    ctermbg=Green
+hi CocListGreyGrey       ctermfg=Grey    ctermbg=Grey
+hi CocListGreyWhite      ctermfg=Grey    ctermbg=White
+hi CocListGreyCyan       ctermfg=Grey    ctermbg=Cyan
+hi CocListGreyYellow     ctermfg=Grey    ctermbg=Yellow
+hi CocListGreyMagenta    ctermfg=Grey    ctermbg=Magenta
+hi CocListGreyRed        ctermfg=Grey    ctermbg=Red
+hi CocListFgGrey         ctermfg=Grey
+hi CocListBgGrey         ctermbg=Grey
+
+hi CocListWhiteBlack     ctermfg=White   ctermbg=Black
+hi CocListWhiteBlue      ctermfg=White   ctermbg=Blue
+hi CocListWhiteGreen     ctermfg=White   ctermbg=Green
+hi CocListWhiteGrey      ctermfg=White   ctermbg=Grey
+hi CocListWhiteWhite     ctermfg=White   ctermbg=White
+hi CocListWhiteCyan      ctermfg=White   ctermbg=Cyan
+hi CocListWhiteYellow    ctermfg=White   ctermbg=Yellow
+hi CocListWhiteMagenta   ctermfg=White   ctermbg=Magenta
+hi CocListWhiteRed       ctermfg=White   ctermbg=Red
+hi CocListFgWhite        ctermfg=White
+hi CocListBgWhite        ctermbg=White
+
+hi CocListCyanBlack      ctermfg=Cyan    ctermbg=Black
+hi CocListCyanBlue       ctermfg=Cyan    ctermbg=Blue
+hi CocListCyanGreen      ctermfg=Cyan    ctermbg=Green
+hi CocListCyanGrey       ctermfg=Cyan    ctermbg=Grey
+hi CocListCyanWhite      ctermfg=Cyan    ctermbg=White
+hi CocListCyanCyan       ctermfg=Cyan    ctermbg=Cyan
+hi CocListCyanYellow     ctermfg=Cyan    ctermbg=Yellow
+hi CocListCyanMagenta    ctermfg=Cyan    ctermbg=Magenta
+hi CocListCyanRed        ctermfg=Cyan    ctermbg=Red
+hi CocListFgCyan         ctermfg=Cyan
+hi CocListBgCyan         ctermbg=Cyan
+
+hi CocListYellowBlack    ctermfg=Yellow  ctermbg=Black
+hi CocListYellowBlue     ctermfg=Yellow  ctermbg=Blue
+hi CocListYellowGreen    ctermfg=Yellow  ctermbg=Green
+hi CocListYellowGrey     ctermfg=Yellow  ctermbg=Grey
+hi CocListYellowWhite    ctermfg=Yellow  ctermbg=White
+hi CocListYellowCyan     ctermfg=Yellow  ctermbg=Cyan
+hi CocListYellowYellow   ctermfg=Yellow  ctermbg=Yellow
+hi CocListYellowMagenta  ctermfg=Yellow  ctermbg=Magenta
+hi CocListYellowRed      ctermfg=Yellow  ctermbg=Red
+hi CocListFgYellow       ctermfg=Yellow
+hi CocListBgYellow       ctermbg=Yellow
+
+hi CocListMagentaBlack   ctermfg=Magenta ctermbg=Black
+hi CocListMagentaBlue    ctermfg=Magenta ctermbg=Blue
+hi CocListMagentaGreen   ctermfg=Magenta ctermbg=Green
+hi CocListMagentaGrey    ctermfg=Magenta ctermbg=Grey
+hi CocListMagentaWhit    ctermfg=Magenta ctermbg=White
+hi CocListMagentaCyan    ctermfg=Magenta ctermbg=Cyan
+hi CocListMagentaYellow  ctermfg=Magenta ctermbg=Yellow
+hi CocListMagentaMagenta ctermfg=Magenta ctermbg=Magenta
+hi CocListMagentaRed     ctermfg=Magenta ctermbg=Red
+hi CocListFgMagenta      ctermfg=Magenta
+hi CocListBgMagenta      ctermbg=Magenta
+
+hi CocListRedBlack       ctermfg=Red     ctermbg=Black
+hi CocListRedBlue        ctermfg=Red     ctermbg=Blue
+hi CocListRedGreen       ctermfg=Red     ctermbg=Green
+hi CocListRedGrey        ctermfg=Red     ctermbg=Grey
+hi CocListRedWhite       ctermfg=Red     ctermbg=White
+hi CocListRedCyan        ctermfg=Red     ctermbg=Cyan
+hi CocListRedYellow      ctermfg=Red     ctermbg=Yellow
+hi CocListRedMagenta     ctermfg=Red     ctermbg=Magenta
+hi CocListRedRed         ctermfg=Red     ctermbg=Red
+hi CocListFgRed          ctermfg=Red
+hi CocListBgRed          ctermbg=Red
+
 "}}}
 
 hi! link SearchLight IncSearch
 
 " Clap {{{
-hi! ClapCurrentSelection ctermfg=0 ctermbg=7
-hi! ClapDisplay ctermfg=0 ctermbg=7
-hi! ClapDisplay2 ctermfg=3 ctermbg=7
-hi! link ClapSelected ClapDisplay
-hi! link ClapSelectedSign ClapDisplay
-hi! link ClapCurrentSelectionSign ClapDisplay
-hi! link ClapBuffersNumberBracket ClapDisplay
-hi! link ClapBuffersNumber ClapDisplay
-hi! link ClapBuffersFsize ClapDisplay
-hi! link ClapBuffersFname ClapDisplay
-hi! link ClapBuffersExtra ClapDisplay
-hi! link ClapLinNr ClapDisplay2
-hi! link ClapLinNrColumn ClapDisplay2
-hi! link ClapColumn ClapDisplay2
-hi! link ClapFpath ClapDisplay2
-hi! link ClapFpathTruncated ClapDisplay2
-hi! link ClapProviderColon ClapDisplay
-hi! link ClapProviderAbout ClapDisplay
-hi! link ClapProviderId ClapDisplay
+hi ClapCurrentSelection ctermfg=0 ctermbg=7
+hi ClapDisplay ctermfg=0 ctermbg=7
+hi ClapDisplay2 ctermfg=3 ctermbg=7
+hi link ClapSelected ClapDisplay
+hi link ClapSelectedSign ClapDisplay
+hi link ClapCurrentSelectionSign ClapDisplay
+hi link ClapBuffersNumberBracket ClapDisplay
+hi link ClapBuffersNumber ClapDisplay
+hi link ClapBuffersFsize ClapDisplay
+hi link ClapBuffersFname ClapDisplay
+hi link ClapBuffersExtra ClapDisplay
+hi link ClapLinNr ClapDisplay2
+hi link ClapLinNrColumn ClapDisplay2
+hi link ClapColumn ClapDisplay2
+hi link ClapFpath ClapDisplay2
+hi link ClapFpathTruncated ClapDisplay2
+hi link ClapProviderColon ClapDisplay
+hi link ClapProviderAbout ClapDisplay
+hi link ClapProviderId ClapDisplay
 
 " ClapNClapNoMatchesFound
 " ClapNoMatchesFound
@@ -307,22 +417,22 @@ hi! link ClapProviderId ClapDisplay
 " ClapDisplayInvisibleEndOfBuffer
 
 " header
-hi! ClapSearchText ctermfg=7 ctermbg=0
-hi! ClapInput      ctermfg=7 ctermbg=0
-hi! ClapSpinner    ctermfg=7 ctermbg=0
+hi ClapSearchText ctermfg=7 ctermbg=0
+hi ClapInput      ctermfg=7 ctermbg=0
+hi ClapSpinner    ctermfg=7 ctermbg=0
 
 
-hi! ClapMatches cterm=bold
-hi! link ClapNClapNoMatchesFound ErrorMsg
-hi! ClapPreview ctermbg=8
-hi! ClapMatches1 ctermfg=0 ctermbg=1
-hi! ClapMatches2 ctermfg=0 ctermbg=1
-hi! ClapMatches3 ctermfg=0 ctermbg=1
-hi! ClapMatches4 ctermfg=0 ctermbg=1
-hi! ClapMatches5 ctermfg=0 ctermbg=1
-hi! ClapMatches6 ctermfg=0 ctermbg=1
-hi! ClapMatches7 ctermfg=0 ctermbg=1
-hi! ClapMatches8 ctermfg=0 ctermbg=1
+hi ClapMatches cterm=bold
+hi link ClapNClapNoMatchesFound ErrorMsg
+hi ClapPreview ctermbg=8
+hi ClapMatches1 ctermfg=0 ctermbg=1
+hi ClapMatches2 ctermfg=0 ctermbg=1
+hi ClapMatches3 ctermfg=0 ctermbg=1
+hi ClapMatches4 ctermfg=0 ctermbg=1
+hi ClapMatches5 ctermfg=0 ctermbg=1
+hi ClapMatches6 ctermfg=0 ctermbg=1
+hi ClapMatches7 ctermfg=0 ctermbg=1
+hi ClapMatches8 ctermfg=0 ctermbg=1
 "}}}
 "
 highlight WhichKey          ctermbg=7 ctermfg=0
@@ -331,10 +441,10 @@ highlight WhichKeyGroup     ctermbg=7 ctermfg=0
 highlight WhichKeyDesc      ctermbg=7 ctermfg=0
 highlight WhichKeyFloating  ctermbg=7 ctermfg=0
 
-hi! mkdHeading cterm=bold
-hi! mkdBlockQuote ctermfg=2
-hi! htmlItalic cterm=italic
+hi mkdHeading cterm=bold
+hi mkdBlockQuote ctermfg=2
+hi htmlItalic cterm=italic
 
-highlight! EndOfBuffer ctermbg=0 ctermfg=0
+highlight EndOfBuffer ctermbg=0 ctermfg=0
 
 " vim: fdm=marker:sw=2:sts=2:et
