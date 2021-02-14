@@ -76,6 +76,7 @@ hi! link Question      MoreMsg
 hi! link ModeMsg       MoreMsg
 hi! link SpecialKey    NonText
 hi! Beacon             ctermfg=7     ctermbg=11
+hi! BeaconDefault      ctermfg=7     ctermbg=11
 
 "}}}
 " Generic syntax {{{
